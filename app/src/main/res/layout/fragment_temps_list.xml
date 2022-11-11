@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+        <import type="com.example.template.ui.list.catalog.CatalogViewModel" />
+        <variable
+            name="viewModel"
+            type="com.example.template.ui.list.catalog.CatalogViewModel" />
+    </data>
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.list.catalog.CatalogFragment">
+
+<!--            <EditText
+                android:id="@+id/edSearch"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/search_box_background"
+                android:hint="Search..."
+                android:paddingStart="20dp"
+                android:textColor="@color/dark_purple"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/rvTemps" />-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTemps"
+                listData="@{viewModel.liveEventList}"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="LinearLayoutManager"
+                tools:listitem="@layout/template_item" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnAddTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/dark_purple"
+            android:src="@drawable/ic_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/white" />-->
+
+
+</layout>

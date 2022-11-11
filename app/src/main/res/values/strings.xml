@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">TempsApp</string>
+    <!-- floating label -->
+    <string name="sheridan">Sheridan, 2022</string>
+
+    <!-- menu items -->
+    <string name="action_search">Search</string>
+    <string name="action_about">About</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_clear">Clear</string>
+
+    <!-- about dialog -->
+    <string name="author">Alex Tetervak, Sheridan College, 2022</string>
+
+    <!-- the list fragments -->
+    <string name="event_image">event image</string>
+
+    <!-- details fragment -->
+    <string name="wiki_link">Wikipedia</string>
+
+    <!-- search fragment -->
+    <string name="find_cheaper_than">Find cheaper than</string>
+
+    <!-- navigation labels -->
+    <string name="fragment_details">Details</string>
+    <string name="fragment_catalog">Catalog</string>
+    <string name="fragment_search">Search</string>
+    <string name="fragment_about">About</string>
+    <string name="fragment_wiki">Wikipedia</string>
+
+    <!-- error dialog -->
+    <string name="error_template">Error: %1$s</string>
+    <string name="cannot_load_the_data">Cannot load the data</string>
+</resources>
