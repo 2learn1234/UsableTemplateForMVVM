@@ -14,7 +14,7 @@
     </fragment>
     <fragment
         android:id="@+id/tempFragment4"
-        android:name="com.example.template.ui.list.catalog.TempFragment"
+        android:name="com.example.template.ui.details.TempFragment"
         android:label="TempFragment" >
         <argument
             android:name="event"
@@ -24,7 +24,7 @@
     </fragment>
     <!--    <fragment
             android:id="@+id/detailsFragment"
-            android:name="com.example.template.ui.list.catalog.TempFragment"
+            android:name="com.example.template.ui.details.TempFragment"
             android:label="@string/fragment_details">
             <argument
                 android:name="flowerId"

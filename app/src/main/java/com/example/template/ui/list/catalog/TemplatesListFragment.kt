@@ -47,14 +47,14 @@ class TemplatesListFragment : Fragment(R.layout.fragment_temps_list), MenuProvid
 
         val divider = DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
         binding.rvTemps.addItemDecoration(divider)
-        binding.rvTemps.adapter = EventListAdapter(EventListAdapter.EventDiffCallback()) { event ->
+       /* binding.rvTemps.adapter = EventListAdapter(EventListAdapter.EventDiffCallback()) { event ->
             val bundle=Bundle().apply {
-                putParcelable("event", event.asEventEntity())
+                putParcelable("event", event)
             }
             navController.navigate(R.id.action_catalogFragment_to_tempFragment4,bundle)
           //  val action = TemplatesListFragmentDirections.actionTemplatesListFragmentToTempFragment()
           //  navController.navigate(action)
-        }
+        }*/
 
         binding.lifecycleOwner = viewLifecycleOwner
        binding.viewModel = viewModel

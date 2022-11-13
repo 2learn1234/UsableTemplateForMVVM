@@ -11,6 +11,7 @@ import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
 import com.example.template.R
 import com.example.template.databinding.FragmentTempBinding
+import com.example.template.ui.details.TempFragmentArgs
 import dagger.hilt.EntryPoint
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.migration.CustomInjection.inject
